@@ -11,10 +11,10 @@ let out4 = document.querySelector('.out4');
 for (let i = 1; i < 9; i++) {
     // out.innerHTML +='3*' + i + '=' + (i * 3) + '<br>';
     // out4.innerHTML += `3*${i}=${3 * i}<br>`;
-for (let k = 1; k < 10; k++) {
-    out4.innerHTML += `${i}*${k}=${k * i}<br>`;
-}
-out4.innerHTML += '<hr>';
+    for (let k = 1; k < 10; k++) {
+        out4.innerHTML += `${i}*${k}=${k * i}<br>`;
+    }
+    out4.innerHTML += '<hr>';
 }
 
 // Task 1
@@ -47,9 +47,9 @@ for (let i = 0; i < 3; i = i + 1) {
 let out2 = document.querySelector('.out2');
 for (let i = 0; i < 3; i++) {
     out2.innerHTML += i + 1 + '<br>';
-for (let k = 0; k < 3; k++) {
-    out2.innerHTML += '*_';
-}
+    for (let k = 0; k < 3; k++) {
+        out2.innerHTML += '*_';
+    }
     out2.innerHTML += '<br>';
 }
 
@@ -63,19 +63,22 @@ for (let k = 0; k < 3; k++) {
 // Решить задачу с помощью вложенных циклов. Внешний цикл выводит перенос строки br, внутренний - звездочки, знак подчеркивания.
 
 let out3 = document.querySelector('.out3');
- for (let i = 0; i <= 3; i++) {
-     for (let k = 0; k < 3; k++) {
-         out3.innerHTML += '*_';
-        }
-        out3.innerHTML += '<br>'; 
- }
-
-
-
- let out5 = document.querySelector('.out5');
-    for (let i = 0; i < 10; i++) {
-        for (let k = 0; k < i; k++) {
-            out5.innerHTML += '*';       }
-            out5.innerHTML += '<br>';
-
+for (let i = 0; i <= 3; i++) {
+    for (let k = 0; k < 3; k++) {
+        out3.innerHTML += '*_';
     }
+    out3.innerHTML += '<br>';
+}
+
+
+
+let out5 = document.querySelector('.out5');
+for (let i = 0; i < 10; i++) {
+    let stars = '';
+    for (let k = 0; k < i; k++) {
+        stars += '*';
+    }
+    out5.innerHTML += stars;
+    out5.innerHTML += '<br>';
+
+}
