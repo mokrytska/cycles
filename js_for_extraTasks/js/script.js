@@ -96,10 +96,10 @@ let arr9 = [];
 
 for (let i = 1; i <= 10; i++) {
    if (i % 2 === 0) {
-       arr8[i] = i;
+       arr8.push(i);
    }
    else {
-       arr9[i] = i;
+       arr9.push(i);
    } 
   
 }
