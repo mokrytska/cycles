@@ -59,7 +59,7 @@ for (let i = 0; i <= 10; i++) {
 
 // 6) Створити строку “I don’t know javascript”. Вивести в консоль кожен символ строки
 let str = 'I dont know javascript';
-for (i = 0; i < str.length; i++) {
+for (let i = 0; i < str.length; i++) {
     console.log(str[i])
 }
 
@@ -67,14 +67,14 @@ for (i = 0; i < str.length; i++) {
 
 let arr = [1,2,3,4,5,6];
 console.log(arr);
-for (i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
 }
 
 // 8) Створити масив [1,-2,3,-4,5,-6].  Вивести в консоль тільки додатні числа
 
 let arr1 = [1,-2,3,-4,5,-6];
-for (i = 0; i < arr.length; i++ ) {
+for (let i = 0; i < arr.length; i++ ) {
     if (arr1[i] > 0) {
         console.log(arr1[i]);
     }
@@ -82,7 +82,7 @@ for (i = 0; i < arr.length; i++ ) {
 // 9) Створити масив [4,5,1,-2,3,-4,5,-6].  Вивести в консоль тільки парні числа
 
 let arr2 = [4,5,1,-2,3,-4,5,-6];
-for (i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i++) {
     if (arr2[i] % 2 == 0) {
         console.log(arr2[i]);
     }
@@ -96,7 +96,7 @@ for (i = 0; i < arr2.length; i++) {
 // 11) Вивести в консоль суму чисел від 0 до 10
 
 let sum = 0;
-for (i = 0; i <= 10; i++ ) {
+for (let i = 0; i <= 10; i++ ) {
 sum = sum + i;
 }
 console.log(sum);
@@ -105,7 +105,7 @@ console.log(sum);
 
 let arr3 = [5,6,7,8,9,1,2,3,4];
 let sum2 = 0;
-for (i = 0; i < arr3.length; i++) {
+for (let i = 0; i < arr3.length; i++) {
     sum2 = sum2 + arr3[i];
 }
 console.log(sum2);
@@ -118,7 +118,7 @@ console.log(sum2);
 // 14) Створити масив [‘i’,’ ’,’d’,’o’,’n’,’`’,’t’,’ ’,’k’,’n’,’o’,’w’,’ ’,’j’,’s’]. За допомогою циклу зконкатенувати всі елементи масива в одну строку. Вивести в консоль “i don’t know js”
 let arr4 =  ['i',' ' ,'d','o','n','" ','t',' ','k','n','o','w',' ','j','s'];
 let ps = ' ';
-for (i = 0; i < arr4.length; i++) {
+for (let i = 0; i < arr4.length; i++) {
     ps += arr4[i]; 
 }
 console.log(ps);

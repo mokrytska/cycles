@@ -8,8 +8,9 @@ let text = document.querySelector('div');
 console.log(text);
 
 input.addEventListener('input', function () {
-    text.innerHTML = ' ';
+    text.innerHTML = '';
     for (let i = 0; i < input.value; i++) {
         text.innerHTML += 'hello ';
     }
 })
+
