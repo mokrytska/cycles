@@ -33,7 +33,7 @@ for (let i = 1; i <= 6; i++) {
 // 3*10=30
 
 for (let i = 1; i <= 10; i++) {
-    console.log('3' + '*' + i + '=' + i*3);
+    console.log('3' + '*' + i + '=' + i * 3);
 }
 
 // 4) вивести в консоль таку послідовність 
@@ -52,7 +52,7 @@ for (let i = 1; i <= 10; i++) {
 // 91 
 // 98
 for (let i = 7; i < 100; i = i + 7) {
-    console.log (i);
+    console.log(i);
 }
 
 // 5) вивести в консоль таку послідовність
@@ -74,7 +74,7 @@ for (let i = 1; i < 600; i = i * 2) {
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let arr6 = [];
 for (let i = 0; i < 10; i++) {
-	arr6[i] = i + 1;
+    arr6[i] = i + 1;
 }
 console.log(arr6);
 
@@ -82,7 +82,7 @@ console.log(arr6);
 // [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10]
 let arr7 = [];
 for (let i = 0; i < 11; i++) {
-    arr7[i] = 20 - i; 
+    arr7[i] = 20 - i;
 }
 console.log(arr7);
 
@@ -95,24 +95,29 @@ let arr8 = [];
 let arr9 = [];
 
 for (let i = 1; i <= 10; i++) {
-   if (i % 2 === 0) {
-       arr8.push(i);
-   }
-   else {
-       arr9.push(i);
-   } 
-  
+    if (i % 2 === 0) {
+        arr8.push(i);
+    } else {
+        arr9.push(i);
+    }
+
 }
 console.log(arr8);
 console.log(arr9);
 
 // 9) створити змінну записати в неї факторіал 10. вирахувати циклом
 // 3628800
+let fact = 1;
+for (let i = 1; i <=10; i++) {
+    fact = fact * i;
+}
+console.log(fact);
+
 
 // 10) створити змінну і записати в неї 2 в степені 10. вирахувати циклом
 // 1024
-
-
-
-
-
+let a = 2;
+for (i = 1; i < 10; i ++) {
+    a *= 2;
+}
+console.log(a);
